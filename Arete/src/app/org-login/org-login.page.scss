@@ -1,0 +1,121 @@
+.tl-icon {
+    display: inline;
+    transform: rotate(0.01deg);
+    left: 90%;
+    // top: 1%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 10%;
+    // line-height: 25px;
+    text-align: right;
+    color: #FC9F5B;
+}
+
+.image-logo img {
+    width: 80%;
+    height: 10%;
+    left: 15%;
+    top: 15%;
+    // border-radius: ;
+    border-left: 10%;
+    float: center;
+    margin-left: 10%;
+}
+
+.text-logo {
+    /* ARETE */
+    position: absolute;
+    width: 30%;
+    height: 25%;
+    left: 40%;
+    top: 37%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 42px;
+    color: #FC9F5B;
+    transform: rotate(0.01deg);
+    color: FC9F5B;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.Org {
+    position: absolute;
+    width: 200px;
+    left: 31%;
+    top: 50%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100%;
+    line-height: normal;
+    color: #000000;
+}
+
+.orgNameInput {
+    /* Rectangle 1 */
+    position: absolute;
+    width: 51%;
+    height: 5%;
+    left: 25%;
+    top: 57%;
+    // background: #FFFFFF;
+    border: 3px solid #000;
+    box-sizing: border-box;
+}
+
+.emailInput {
+    /* Rectangle 2 */
+    position: absolute;
+    width: 51%;
+    height: 5%;
+    left: 25%;
+    top: 65%;
+    background: #FFFFFF;
+    border: 3px solid #000;
+    box-sizing: border-box;
+}
+
+.password {
+    /* Rectangle 3 */
+    position: absolute;
+    width: 51%;
+    height: 5%;
+    left: 25%;
+    top: 73%;
+    background: #FFFFFF;
+    border: 3px solid #000;
+    box-sizing: border-box;
+}
+
+.loginButton {
+    margin-top: 95%;
+    margin-right: 29%;
+    float: right;
+    width: 158px;
+    height: 67px;
+    left: 26px;
+    top: 437px;
+    --background: orange;
+    border-radius: 20px;
+    color: black;
+    font-family: Poppins;
+}
+
+.userPage {
+    /* Organization? */
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    left: 85%;
+    top: 93%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100%;
+    line-height: 25px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    color: #A62639;
+}
