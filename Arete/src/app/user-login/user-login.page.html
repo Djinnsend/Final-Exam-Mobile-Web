@@ -1,9 +1,35 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>user-login</ion-title>
+    <div class="tl-icon">
+      <h4>Register</h4>
+    </div>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <div class="image-logo">
+    <img src="../../assets/icon/volunteer 1.jpg" />
+  </div>
 
+  <div class="text-logo">
+    <h1>Arete</h1>
+  </div>
+
+  <div class="User">User Login</div>
+
+  <div class="userNameInput">
+    <ion-input type="text" placeholder="Username" [(ngModel)] = "username"></ion-input>
+  </div>
+  <div class="emailInput">
+    <ion-input type="email" placeholder="Email" [(ngModel)] = "email"></ion-input>
+  </div>
+  <div class="password">
+    <ion-input type="Password" placeholder="Password" [(ngModel)] = "password"></ion-input>
+  </div>
+  <ion-button class="loginButton"> Login </ion-button>
+
+  <p class="orgPage">Organization?</p>
 </ion-content>
