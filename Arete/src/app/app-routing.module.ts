@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'org-login',
     loadChildren: () => import('./org-login/org-login.module').then( m => m.OrgLoginPageModule)
   },
+  {
+    path: 'user-login',
+    loadChildren: () => import('./user-login/user-login.module').then( m => m.UserLoginPageModule)
+  },
 ];
 
 @NgModule({
