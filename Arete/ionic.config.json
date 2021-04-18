@@ -1,5 +1,7 @@
 {
   "name": "Arete",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
