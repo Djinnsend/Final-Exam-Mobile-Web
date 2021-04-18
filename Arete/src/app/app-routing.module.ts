@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'login-signup-process',
     loadChildren: () => import('./login-signup-process/login-signup-process.module').then( m => m.LoginSignupProcessPageModule)
   },
+  {
+    path: 'user-events',
+    loadChildren: () => import('./user-events/user-events.module').then( m => m.UserEventsPageModule)
+  },
 ];
 
 @NgModule({
