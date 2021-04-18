@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'org-register',
     loadChildren: () => import('./org-register/org-register.module').then( m => m.OrgRegisterPageModule)
   },
+  {
+    path: 'login-signup-process',
+    loadChildren: () => import('./login-signup-process/login-signup-process.module').then( m => m.LoginSignupProcessPageModule)
+  },
 ];
 
 @NgModule({
