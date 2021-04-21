@@ -1,45 +1,45 @@
 .register-tab {
-  width: 100%;
-  height: 100px;
-  left: 0px;
-  --background: #504746;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-}
-
-.tab-text {
-  text-align: center;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 42px;
-  color: #dcc48e;
-}
-
-.input-container > * {
-  width: 51%;
-  border: 3px solid #5A5353;
-  box-sizing: border-box;
-  margin: 5% auto;
-  margin-left: auto;
-  display:block;
-}
-
-ion-input{
-  color:#000;
-}
-
-.submit{
-  text-align: center;
-  margin:10px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration-line: underline;
-  color: #353535;
-}
-
-.return{
-  color: #B33F62;
-}
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    --background: #504746;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+  }
+  
+  .tab-text {
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 42px;
+    color: #dcc48e;
+  }
+  
+  .input-container > * {
+    width: 51%;
+    border: 3px solid #5A5353;
+    box-sizing: border-box;
+    margin: 5% auto;
+    margin-left: auto;
+    display:block;
+  }
+  
+  ion-input{
+    color:#000;
+  }
+  
+  .submit{
+    text-align: center;
+    margin:10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration-line: underline;
+    color: #353535;
+  }
+  
+  .return{
+    color: #B33F62;
+  }

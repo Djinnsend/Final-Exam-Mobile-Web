@@ -1,48 +1,49 @@
 .failedToolbar {
-  height: 60px;
-  --background: #fc9f5b;
-}
-
-.failedBody {
-  --background: #504746;
-}
-
-.failedTextUno {
-  /* LOGIN FAILED RETRY? */
-
+    height: 60px;
+    --background: #fc9f5b;
+  }
+  
+  .failedBody {
+    --background: #504746;
+  }
+  
+  .failedTextUno {
+    /* LOGIN FAILED RETRY? */
+  
+    position: absolute;
+    width: 104px;
+    height: 48px;
+    left: 144px;
+    top: 300px;
+  //   margin-bottom: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  
+    color: #ffffff;
+  }
+  
+  .failedTextDuo{
+      /* Please Return and retry */
+  
   position: absolute;
-  width: 104px;
-  height: 48px;
-  left: 144px;
-  top: 300px;
-//   margin-bottom: 10px;
+  width: 110px;
+  height: 42px;
+  left: 138px;
+  top: 330px;
+  
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
   text-align: center;
-
-  color: #ffffff;
-}
-
-.failedTextDuo{
-    /* Please Return and retry */
-
-position: absolute;
-width: 110px;
-height: 42px;
-left: 138px;
-top: 330px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 14px;
-text-align: center;
-
-color: #FFFFFF;
-
-
-}
+  
+  color: #FFFFFF;
+  
+  
+  }
+  

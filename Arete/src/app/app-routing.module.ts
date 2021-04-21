@@ -12,8 +12,20 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'login-signup-process',
+    loadChildren: () => import('./login-signup-process/login-signup-process.module').then( m => m.LoginSignupProcessPageModule)
+  },
+  {
     path: 'org-login',
     loadChildren: () => import('./org-login/org-login.module').then( m => m.OrgLoginPageModule)
+  },
+  {
+    path: 'org-register',
+    loadChildren: () => import('./org-register/org-register.module').then( m => m.OrgRegisterPageModule)
+  },
+  {
+    path: 'user-events',
+    loadChildren: () => import('./user-events/user-events.module').then( m => m.UserEventsPageModule)
   },
   {
     path: 'user-login',
@@ -22,18 +34,6 @@ const routes: Routes = [
   {
     path: 'user-register',
     loadChildren: () => import('./user-register/user-register.module').then( m => m.UserRegisterPageModule)
-  },
-  {
-    path: 'org-register',
-    loadChildren: () => import('./org-register/org-register.module').then( m => m.OrgRegisterPageModule)
-  },
-  {
-    path: 'login-signup-process',
-    loadChildren: () => import('./login-signup-process/login-signup-process.module').then( m => m.LoginSignupProcessPageModule)
-  },
-  {
-    path: 'user-events',
-    loadChildren: () => import('./user-events/user-events.module').then( m => m.UserEventsPageModule)
   },
 ];
 
