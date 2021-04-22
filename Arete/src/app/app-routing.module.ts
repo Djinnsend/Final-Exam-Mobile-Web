@@ -35,6 +35,10 @@ const routes: Routes = [
     path: 'user-register',
     loadChildren: () => import('./user-register/user-register.module').then( m => m.UserRegisterPageModule)
   },
+  {
+    path: 'user-landing-page',
+    loadChildren: () => import('./user-landing-page/user-landing-page.module').then( m => m.UserLandingPagePageModule)
+  },
 ];
 
 @NgModule({
