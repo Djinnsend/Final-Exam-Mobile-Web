@@ -1,9 +1,35 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>user-events</ion-title>
-  </ion-toolbar>
+    <ion-toolbar class="register-tab">
+        <p class = "tab-text">Events</p>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
 </ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="user-events">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Events</ion-label>
+      {% comment %} <ion-badge>6</ion-badge> {% endcomment %}
+    </ion-tab-button>
+
+    <ion-tab-button tab="user-requests">
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>Requests</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="user-approvals">
+      <ion-icon name="game-controller"></ion-icon>
+      <ion-label>Approvals</ion-label>
+      {% comment %} <ion-badge>6</ion-badge> {% endcomment %}
+    </ion-tab-button>
+
+    <ion-tab-button tab="user-profile">
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

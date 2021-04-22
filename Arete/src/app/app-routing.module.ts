@@ -39,6 +39,18 @@ const routes: Routes = [
     path: 'user-landing-page',
     loadChildren: () => import('./user-landing-page/user-landing-page.module').then( m => m.UserLandingPagePageModule)
   },
+  {
+    path: 'user-requests',
+    loadChildren: () => import('./user-requests/user-requests.module').then( m => m.UserRequestsPageModule)
+  },
+  {
+    path: 'user-approvals',
+    loadChildren: () => import('./user-approvals/user-approvals.module').then( m => m.UserApprovalsPageModule)
+  },
+  {
+    path: 'user-profile',
+    loadChildren: () => import('./user-profile/user-profile.module').then( m => m.UserProfilePageModule)
+  },
 ];
 
 @NgModule({
