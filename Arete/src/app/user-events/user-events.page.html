@@ -6,30 +6,25 @@
 
 <ion-content>
 
-</ion-content>
-
 <ion-tabs>
   <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="user-events">
-      <ion-icon name="home"></ion-icon>
+    <ion-tab-button class = "SelectedTab" selected = true href="user-events">
       <ion-label>Events</ion-label>
-      {% comment %} <ion-badge>6</ion-badge> {% endcomment %}
     </ion-tab-button>
 
-    <ion-tab-button tab="user-requests">
-      <ion-icon name="person-circle"></ion-icon>
+    <ion-tab-button class = "unSelectedTab" href="user-requests">
       <ion-label>Requests</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="user-approvals">
-      <ion-icon name="game-controller"></ion-icon>
+    <ion-tab-button class = "unSelectedTab" href="user-approvals">
       <ion-label>Approvals</ion-label>
-      {% comment %} <ion-badge>6</ion-badge> {% endcomment %}
     </ion-tab-button>
 
-    <ion-tab-button tab="user-profile">
-      <ion-icon name="person-circle"></ion-icon>
+    <ion-tab-button class = "unSelectedTab" href="user-profile">
       <ion-label>Profile</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
 </ion-tabs>
+
+</ion-content>
+
