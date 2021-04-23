@@ -1,9 +1,30 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>user-approvals</ion-title>
-  </ion-toolbar>
+    <ion-toolbar class="register-tab">
+        <p class = "tab-text">Approvals</p>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button class = "unSelectedTab" href="user-events">
+      <ion-label>Events</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button class = "unSelectedTab" href="user-requests">
+      <ion-label>Requests</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button class = "SelectedTab" selected = true href="user-approvals">
+      <ion-label>Approvals</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button class = "unSelectedTab" href="user-profile">
+      <ion-label>Profile</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+
 </ion-content>
+
