@@ -1,30 +1,28 @@
 <ion-header>
-    <ion-toolbar class="register-tab">
-        <p class = "tab-text">Events</p>
-    </ion-toolbar>
+  <ion-toolbar class="register-tab">
+    <p class="tab-text">Events</p>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-item routerLink = "/user-details"> Hi </ion-item> 
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button class="SelectedTab" selected="true" href="user-events">
+        <ion-label>Events</ion-label>
+      </ion-tab-button>
 
-<ion-tabs>
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button class = "SelectedTab" selected = true href="user-events">
-      <ion-label>Events</ion-label>
-    </ion-tab-button>
+      <ion-tab-button class="unSelectedTab" href="user-requests">
+        <ion-label>Requests</ion-label>
+      </ion-tab-button>
 
-    <ion-tab-button class = "unSelectedTab" href="user-requests">
-      <ion-label>Requests</ion-label>
-    </ion-tab-button>
+      <ion-tab-button class="unSelectedTab" href="user-approvals">
+        <ion-label>Approvals</ion-label>
+      </ion-tab-button>
 
-    <ion-tab-button class = "unSelectedTab" href="user-approvals">
-      <ion-label>Approvals</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button class = "unSelectedTab" href="user-profile">
-      <ion-label>Profile</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
-
+      <ion-tab-button class="unSelectedTab" href="user-profile">
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
-
