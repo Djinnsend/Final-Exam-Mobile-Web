@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserLoginPage implements OnInit {
 
+  username: string = '';
+  email: string = '';
+  password: string = '';
+  return: Array<object>;
   constructor() { }
 
   ngOnInit() {
