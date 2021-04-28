@@ -41,7 +41,7 @@ const routes: Routes = [
     loadChildren: () => import('./user-register/user-register.module').then( m => m.UserRegisterPageModule)
   },
   {
-    path: 'user-landing-page/:eventID',
+    path: 'user-landing-page/:eventID/:username',
     loadChildren: () => import('./user-landing-page/user-landing-page.module').then( m => m.UserLandingPagePageModule)
   },
   {

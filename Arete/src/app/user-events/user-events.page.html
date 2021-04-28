@@ -7,7 +7,7 @@
 <ion-content>
   <div id = "Events">
     <ion-item *ngFor = "let event of events"> 
-      <ion-icon routerLink = "/user-landing-page/{{event.id}}" slot = "end" name = "trash"></ion-icon>
+      <ion-icon routerLink = "/user-landing-page/{{event.id}}/{{username}}" slot = "end" name = "trash"></ion-icon>
       <ion-text slot = "start">
         {{event.host}} - {{event.title}}
       </ion-text>
