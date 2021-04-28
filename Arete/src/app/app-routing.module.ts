@@ -25,7 +25,7 @@ const routes: Routes = [
     loadChildren: () => import('./org-register/org-register.module').then( m => m.OrgRegisterPageModule)
   },
   {
-    path: 'user-events',
+    path: 'user-events/:username',
     loadChildren: () => import('./user-events/user-events.module').then( m => m.UserEventsPageModule)
   },
   {

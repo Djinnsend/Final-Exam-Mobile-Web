@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <div class="tl-icon">
-      <h4 routerLink = "/user-register">Register</h4>
+      <h4 routerLink="/user-register">Register</h4>
     </div>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
@@ -11,7 +11,7 @@
 
 <ion-content [fullscreen]="true">
   <div class="image-logo">
-    <img (click) = "fetch()" src="../../assets/icon/volunteer 1.jpg" />
+    <img (click)="login()" src="../../assets/icon/volunteer 1.jpg" />
   </div>
 
   <div class="text-logo">
@@ -21,15 +21,15 @@
   <div class="User">User Login</div>
 
   <div class="userNameInput">
-    <ion-input type="text" placeholder="Username"></ion-input>
+    <ion-input [(ngModel)]="username" type="text" placeholder="Username"></ion-input>
   </div>
   <div class="emailInput">
-    <ion-input type="email" placeholder="Email"></ion-input>
+    <ion-input [(ngModel)]="email" type="email" placeholder="Email"></ion-input>
   </div>
   <div class="password">
-    <ion-input type="Password" placeholder="Password"></ion-input>
+    <ion-input [(ngModel)]="password" type="Password" placeholder="Password"></ion-input>
   </div>
   <ion-button class="loginButton"> Login </ion-button>
 
-  <p class="orgPage" routerLink = "/org-login">Organization?</p>
+  <p class="orgPage" routerLink="/org-login">Organization?</p>
 </ion-content>
