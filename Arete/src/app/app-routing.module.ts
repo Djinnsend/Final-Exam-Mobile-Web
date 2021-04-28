@@ -28,6 +28,10 @@ const routes: Routes = [
     path: 'user-events/:username',
     loadChildren: () => import('./user-events/user-events.module').then( m => m.UserEventsPageModule)
   },
+  // {
+  //   path: 'user-events',
+  //   loadChildren: () => import('./user-events/user-events.module').then( m => m.UserEventsPageModule)
+  // },
   {
     path: 'user-login',
     loadChildren: () => import('./user-login/user-login.module').then( m => m.UserLoginPageModule)
@@ -37,19 +41,19 @@ const routes: Routes = [
     loadChildren: () => import('./user-register/user-register.module').then( m => m.UserRegisterPageModule)
   },
   {
-    path: 'user-landing-page',
+    path: 'user-landing-page/:eventID',
     loadChildren: () => import('./user-landing-page/user-landing-page.module').then( m => m.UserLandingPagePageModule)
   },
   {
-    path: 'user-requests',
+    path: 'user-requests/:username',
     loadChildren: () => import('./user-requests/user-requests.module').then( m => m.UserRequestsPageModule)
   },
   {
-    path: 'user-approvals',
+    path: 'user-approvals/:username',
     loadChildren: () => import('./user-approvals/user-approvals.module').then( m => m.UserApprovalsPageModule)
   },
   {
-    path: 'user-profile',
+    path: 'user-profile/:username',
     loadChildren: () => import('./user-profile/user-profile.module').then( m => m.UserProfilePageModule)
   },
   {

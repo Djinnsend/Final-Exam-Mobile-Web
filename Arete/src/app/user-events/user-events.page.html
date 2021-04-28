@@ -5,22 +5,29 @@
 </ion-header>
 
 <ion-content>
-  <ion-item routerLink = "/user-details"> Hi </ion-item> 
+  <div id = "Events">
+    <ion-item *ngFor = "let event of events"> 
+      <ion-icon routerLink = "/user-landing-page/{{event.id}}" slot = "end" name = "trash"></ion-icon>
+      <ion-text slot = "start">
+        {{event.host}} - {{event.title}}
+      </ion-text>
+    </ion-item> 
+  </div>
   <ion-tabs>
     <ion-tab-bar slot="bottom">
-      <ion-tab-button class="SelectedTab" selected="true" routerLink="/user-events">
+      <ion-tab-button class="SelectedTab" selected="true" routerLink="/user-events/{{username}}">
         <ion-label>Events</ion-label>
       </ion-tab-button>
 
-      <ion-tab-button class="unSelectedTab" routerLink="/user-requests">
+      <ion-tab-button class="unSelectedTab" routerLink="/user-requests/{{username}}">
         <ion-label>Requests</ion-label>
       </ion-tab-button>
 
-      <ion-tab-button class="unSelectedTab" routerLink="/user-approvals">
+      <ion-tab-button class="unSelectedTab" routerLink="/user-approvals/{{username}}">
         <ion-label>Approvals</ion-label>
       </ion-tab-button>
 
-      <ion-tab-button class="unSelectedTab" routerLink="/user-profile">
+      <ion-tab-button class="unSelectedTab" routerLink="/user-profile/{{username}}">
         <ion-label>Profile</ion-label>
       </ion-tab-button>
     </ion-tab-bar>

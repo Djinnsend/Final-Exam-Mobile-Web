@@ -1,9 +1,26 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>user-landingPage</ion-title>
+  <ion-toolbar class="register-tab">
+    <p class="tab-text">Event Details</p>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-item>Event Organization - {{host}}</ion-item>
+  <ion-item>Event Name - {{title}}</ion-item>
+  <ion-item>Event Goal - {{goal}}</ion-item>
+  <ion-item>Event Objective - {{objective}}</ion-item>
+  <ion-item>Event Location - {{location}}</ion-item>
+  <ion-item>Event Reward - {{reward}}</ion-item>
+  <ion-item>Event Deadline - {{endDate}}</ion-item>
+  <ion-item>Application Link - {{link}}</ion-item>
+  <ion-item>Event Rewards - {{reward}}</ion-item>
+  <ion-item>Accomodation Option - {{accomodation}}</ion-item>
+
+  <h1 class = "participate"> Participate</h1>
+
+
 
 </ion-content>
