@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~11.2.0",
     "@angular/platform-browser-dynamic": "~11.2.0",
     "@angular/router": "~11.2.0",
+    "@ionic-native/call-number": "^5.32.1",
     "@ionic-native/http": "^5.32.1",
     "@ionic-native/in-app-browser": "^5.32.1",
     "@ionic-native/local-notifications": "^5.32.1",
