@@ -11,7 +11,7 @@
 
 <ion-content [fullscreen]="true">
   <div class="image-logo">
-    <img (click)="login()" src="../../assets/icon/volunteer 1.jpg" />
+    <img src="../../assets/icon/volunteer 1.jpg" />
   </div>
 
   <div class="text-logo">
@@ -29,7 +29,7 @@
   <div class="password">
     <ion-input [(ngModel)]="password" type="Password" placeholder="Password"></ion-input>
   </div>
-  <ion-button class="loginButton"> Login </ion-button>
+  <ion-button (click)="login()" class="loginButton"> Login </ion-button>
 
   <p class="orgPage" routerLink="/org-login">Organization?</p>
 </ion-content>

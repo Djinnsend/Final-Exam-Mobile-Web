@@ -30,7 +30,7 @@ export class UserServiceService {
   }
 
   async participate(username:String,title:String, host:String){
-    this.request = await this.HTTP.post('http://localhost/final-Djinnsend/php/Org/addRequest.php',
+    this.request = await this.HTTP.post('http://localhost/final-Djinnsend/php/api/Org/addRequest.php',
     {"username": `${username}`,"title": `${title}`, "host":`${host}`}, {});
   }
 
