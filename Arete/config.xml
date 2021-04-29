@@ -196,4 +196,5 @@
     <plugin name="cordova-plugin-inappbrowser" spec="^4.1.0" />
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <engine name="browser" spec="6.0.0" />
+    <plugin name="mx.ferreyra.callnumber" spec="~0.0.2" />
 </widget>
