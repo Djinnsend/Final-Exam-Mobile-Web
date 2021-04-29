@@ -6,7 +6,9 @@
 
 <ion-content>
 
-
+<ion-item *ngFor = "let approval of approvals">
+  {{approval.host}} - {{approval.title}}
+</ion-item>
 
 <ion-tabs>
   <ion-tab-bar slot="bottom">

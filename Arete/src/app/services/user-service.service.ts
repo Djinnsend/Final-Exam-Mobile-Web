@@ -34,8 +34,13 @@ export class UserServiceService {
     {"username": `${username}`,"title": `${title}`, "host":`${host}`}, {});
   }
 
-  async approvals(username:String){
+  async requests(username:String){
     this.tempData = await this.HTTP.post('http://localhost/final-Djinnsend/php/api/User/getUserRequests.php',
+    {"username": `${username}`}, {});
+  }
+
+  async approvals(username:String){
+    this.tempData = await this.HTTP.post('http://localhost/final-Djinnsend/php/api/User/getUserApprovals.php',
     {"username": `${username}`}, {});
   }
 

@@ -7,14 +7,14 @@ import { Router, Routes,ActivatedRoute } from '@angular/router';
   templateUrl: './user-requests.page.html',
   styleUrls: ['./user-requests.page.scss'],
 })
-export class UserApprovalsPage implements OnInit {
+export class UserRequestsPage implements OnInit {
   username: String;
   requests: Array<object>;
   constructor(private service: UserServiceService, private route: ActivatedRoute) {}
 
   async ngOnInit() {
     this.username = this.route.snapshot.params.username;
-    await this.service.approvals(this.username);
+    await this.service.requests(this.username);
     this.requests = JSON.parse(this.service.tempData.data);
     console.log(this.requests);
   }
