@@ -29,9 +29,14 @@ export class UserServiceService {
     {"eventID":`${id}`}, {});
   }
 
-  async participate(username:String,title:String,host:String){
+  async participate(username:String,title:String, host:String){
     this.request = await this.HTTP.post('http://localhost/final-Djinnsend/php/Org/addRequest.php',
     {"username": `${username}`,"title": `${title}`, "host":`${host}`}, {});
+  }
+
+  async approvals(username:String){
+    this.tempData = await this.HTTP.post('http://localhost/final-Djinnsend/php/api/User/getUserRequests.php',
+    {"username": `${username}`}, {});
   }
 
   notification(){
@@ -49,6 +54,8 @@ export class UserServiceService {
       color:"orange"
     });
   }
+
+ 
 
 
 }

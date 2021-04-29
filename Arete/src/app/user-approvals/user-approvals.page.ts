@@ -9,10 +9,14 @@ import { Router, Routes,ActivatedRoute } from '@angular/router';
 })
 export class UserApprovalsPage implements OnInit {
   username: String;
-  constructor(private route: ActivatedRoute) { }
+  requests: Array<object>;
+  constructor(private service: UserServiceService, private route: ActivatedRoute) {}
 
-  ngOnInit() {
+  async ngOnInit() {
     this.username = this.route.snapshot.params.username;
+    await this.service.approvals(this.username);
+    this.requests = JSON.parse(this.service.tempData.data);
+    console.log(this.requests);
   }
 
 }
