@@ -5,7 +5,7 @@ import { RouteReuseStrategy } from '@angular/router';
 import { HTTP } from '@ionic-native/http/ngx';
 import { HttpClientModule } from '@angular/common/http';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
-
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
@@ -19,6 +19,7 @@ import { AppRoutingModule } from './app-routing.module';
     HTTP,
     LocalNotifications,
     InAppBrowser,
+    SplashScreen,
   ],
   bootstrap: [AppComponent],
 })
