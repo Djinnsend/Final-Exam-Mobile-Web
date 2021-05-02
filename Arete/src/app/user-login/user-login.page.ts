@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserServiceService } from '../services/user-service.service';
 import { Router, Routes } from '@angular/router';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
 @Component({
   selector: 'app-user-login',
@@ -12,7 +13,7 @@ export class UserLoginPage implements OnInit {
   email: string = '';
   password: string = '';
   data: String;
-  constructor(private service: UserServiceService, private route: Router) {}
+  constructor(private service: UserServiceService, private iab:InAppBrowser,private route: Router) {}
 
   ngOnInit() {}
 
@@ -24,5 +25,9 @@ export class UserLoginPage implements OnInit {
     } else {
       this.route.navigateByUrl(`login-signup-process`);
     }
+  }
+
+  openBrowser(){
+    this.iab.create('http://localhost/final-Djinnsend/','_system');
   }
 }

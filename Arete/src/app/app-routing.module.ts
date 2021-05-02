@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-// import { TabsPage } from './tabs-page';
 
 const routes: Routes = [
   {
@@ -28,10 +27,6 @@ const routes: Routes = [
     path: 'user-events/:username',
     loadChildren: () => import('./user-events/user-events.module').then( m => m.UserEventsPageModule)
   },
-  // {
-  //   path: 'user-events',
-  //   loadChildren: () => import('./user-events/user-events.module').then( m => m.UserEventsPageModule)
-  // },
   {
     path: 'user-login',
     loadChildren: () => import('./user-login/user-login.module').then( m => m.UserLoginPageModule)
@@ -63,6 +58,10 @@ const routes: Routes = [
   {
     path: 'profile-edit/:username',
     loadChildren: () => import('./profile-edit/profile-edit.module').then( m => m.ProfileEditPageModule)
+  },
+  {
+    path: 'same-pass',
+    loadChildren: () => import('./same-pass/same-pass.module').then( m => m.SamePassPageModule)
   },
 ];
 

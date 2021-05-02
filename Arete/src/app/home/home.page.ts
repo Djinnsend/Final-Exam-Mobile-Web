@@ -8,10 +8,7 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 })
 export class HomePage {
 
-  constructor(private iab:InAppBrowser, private screen:SplashScreen) {
-    this.screen.show();
-    this.screen.hide();
-  }
+  constructor(private iab:InAppBrowser, private screen:SplashScreen) {}
 
   openBrowser(){
     this.iab.create('http://localhost/final-Djinnsend/','_system');

@@ -1,41 +1,60 @@
-<ion-header>
+  <ion-header>
     <ion-toolbar class="register-tab">
-        <p class = "tab-text">Register</p>
+      <p class="tab-text">Register</p>
     </ion-toolbar>
-</ion-header>
+  </ion-header>
 
-<ion-content>
+  <ion-content>
     <div class="input-container">
-        <div class="fname">
-            <ion-input type="text" placeholder="First Name" required></ion-input>
-        </div>
-        <div class="lname">
-            <ion-input type="text" placeholder="Last Namee" required></ion-input>
-        </div>
-        <div class="dob">
-            <ion-input type="date" placeholder="Date of Birth" required></ion-input>
-        </div>
-        <div class="email">
-            <ion-input type="email" placeholder="Email" required></ion-input>
-        </div>
-        <div class="phoneNum">
-            <ion-input type="telephone" placeholder="Phone Number" required></ion-input>
-        </div>
-        <div class="occupation">
-            <ion-input type="text" placeholder="Occupation" required></ion-input>
-        </div>
-        <div class="pass1">
-            <ion-input type="password" placeholder="Password" required></ion-input>
-        </div>
-        <div class="pass2">
-            <ion-input type="password" placeholder="Confirm Password" required></ion-input>
-        </div>
-        <div id="describe">
-            <ion-textarea type="text" placeholder="Describe Yourself" required></ion-textarea>
-        </div>
+        <div class="username">
+        <ion-input [(ngModel)]="username" type="text" placeholder="Username" required></ion-input>
+      </div>
+      <div class="fname">
+        <ion-input [(ngModel)]="fname" type="text" placeholder="First Name" required></ion-input>
+      </div>
+      <div class="lname">
+        <ion-input [(ngModel)]="lname" type="text" placeholder="Last Namee" required></ion-input>
+      </div>
+      <div class="dob">
+        <ion-input [(ngModel)]="dob" type="date" placeholder="Date of Birth" required></ion-input>
+      </div>
+      <div class="email">
+        <ion-input [(ngModel)]="email" type="email" placeholder="Email" required></ion-input>
+      </div>
+      <div class="phoneNum">
+        <ion-input
+          [(ngModel)]="phoneNum"
+          type="telephone"
+          placeholder="Phone Number"
+          required
+        ></ion-input>
+      </div>
+      <div class="occupation">
+        <ion-input [(ngModel)]="occupation" type="text" placeholder="Occupation" required></ion-input>
+      </div>
+      <div class="pass1">
+        <ion-input [(ngModel)]="pass1" type="password" placeholder="Password" required></ion-input>
+      </div>
+      <div class="pass2">
+        <ion-input
+          [(ngModel)]="pass2"
+          type="password"
+          placeholder="Confirm Password"
+          required
+        ></ion-input>
+      </div>
+      <div id="describe">
+        <ion-textarea
+          [(ngModel)]="describe"
+          type="text"
+          placeholder="Describe Yourself"
+          required
+        ></ion-textarea>
+      </div>
     </div>
 
-    <h1 class = "submit"> Submit</h1>
+    <h1 (click) = "userRegister()" class="submit">Submit</h1>
 
-    <h4 class = "submit return" routerLink = "/user-login">Back</h4>
+    <h4 class="submit return" routerLink="/user-login">Back</h4>
+  
 </ion-content>
