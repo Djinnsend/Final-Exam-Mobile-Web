@@ -8,6 +8,7 @@ import { CallNumber } from '@ionic-native/call-number/ngx';
   providedIn: 'root'
 })
 export class UserServiceService {
+  profile:HTTPResponse;
   returnData: String;
   tempData: HTTPResponse;
   events: Array<object>;
@@ -28,6 +29,11 @@ export class UserServiceService {
   async getEvent(id:number){
     this.tempData = await this.HTTP.post('http://localhost/final-Djinnsend/php/api/Org/getOrgEvent.php', 
     {"eventID":`${id}`}, {});
+  }
+
+  async getProfile(username:String){
+    this.profile = await this.HTTP.post('http://localhost/final-Djinnsend/php/api/User/getUserProfile.php',
+    {"username":`${username}`}, {});
   }
 
   async participate(username:String,title:String, host:String){
@@ -66,8 +72,9 @@ export class UserServiceService {
       color:"orange"
     });
   }
+}
 
  
 
 
-}
+

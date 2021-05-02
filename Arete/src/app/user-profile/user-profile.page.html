@@ -1,29 +1,127 @@
-<ion-header>
-    <ion-toolbar class="register-tab">
-        <p class = "tab-text">Profile</p>
-    </ion-toolbar>
+<!-- <ion-header>
+  <ion-toolbar class="register-tab">
+    <p class="tab-text">Profile</p>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<ion-content>
+  <ion-item> Username: {{username}}</ion-item>
+  <ion-item> Phone Number: {{phoneNumber}}</ion-item>
+  <ion-item> Personal Email: {{mail}}</ion-item>
+  <ion-item> First Name: {{fname}}</ion-item>
+  <ion-item> Last Name: {{lname}}</ion-item>
+  <ion-item> Date of Birth: {{date}}</ion-item>
+  <ion-item> Occupation: {{occupation}}</ion-item>
+  <ion-item> Description: {{describe}}</ion-item>
+  <h1 class="edit" routerLink="/profile-edit/{{username}}">Edit Profile</h1>
 
-<ion-tabs>
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button class = "unSelectedTab" routerLink="/user-events/{{username}}">
-      <ion-label>Events</ion-label>
-    </ion-tab-button>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button
+        class="unSelectedTab"
+        routerLink="/user-events/{{username}}"
+      >
+        <ion-label>Events</ion-label>
+      </ion-tab-button>
 
-    <ion-tab-button class = "unSelectedTab" routerLink="/user-requests/{{username}}">
-      <ion-label>Requests</ion-label>
-    </ion-tab-button>
+      <ion-tab-button
+        class="unSelectedTab"
+        routerLink="/user-requests/{{username}}"
+      >
+        <ion-label>Requests</ion-label>
+      </ion-tab-button>
 
-    <ion-tab-button class = "unSelectedTab" routerLink="/user-approvals/{{username}}">
-      <ion-label>Approvals</ion-label>
-    </ion-tab-button>
+      <ion-tab-button
+        class="unSelectedTab"
+        routerLink="/user-approvals/{{username}}"
+      >
+        <ion-label>Approvals</ion-label>
+      </ion-tab-button>
 
-    <ion-tab-button class = "SelectedTab" selected = true routerLink="/user-profile/{{username}}">
-      <ion-label>Profile</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
+      <ion-tab-button
+        class="SelectedTab"
+        selected="true"
+        routerLink="/user-profile/{{username}}"
+      >
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content> -->
 
+<ion-content fullscreen="true" slot="fixed">
+  <div class="ion-ion-padding"></div>
+
+  <div class="card">
+    <div class="header">
+      <div class="avatar">
+        <img src="../../assets/icon/volunteer 1.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+  <h6>Click logo to add image from gallery</h6>
+  <div class="card-body">
+    <div class="user-meta ion-text-center">
+      <!-- <h3>{{username}}</h3>
+    <h3>{{fname}} {{lname}}</h3>
+    <h5 class="country">{{phoneNumber}}</h5>
+    <h5 class="country">{{mail}}</h5>
+    <h5 class="country">{{date}}</h5>
+    <h5 class="country">{{occupation}}</h5>
+    <h5 class="country">{{describe}}</h5>-->
+      <!--<h3>ADMIN</h3>
+    <h3>Nana Boakye</h3>
+    <h5 class="country">0243900487</h5>
+    <h5 class="country">admin@admin.com</h5>
+    <h5 class="country">12th April 2020</h5>
+    <h5 class="country">Student</h5>
+    <h5 class="country">Medical Student</h5>-->
+      <br />
+
+      <div class="ion-items">
+        <ion-item> Username: {{username}}</ion-item>
+        <ion-item> Phone Number: {{phoneNumber}}</ion-item>
+        <ion-item> Personal Email: {{mail}}</ion-item>
+        <ion-item> First Name: {{fname}}</ion-item>
+        <ion-item> Last Name: {{lname}}</ion-item>
+        <ion-item> Date of Birth: {{date}}</ion-item>
+        <ion-item> Occupation: {{occupation}}</ion-item>
+        <ion-item> Description: {{describe}}</ion-item>
+      </div>
+      <h1 class="edit" routerLink="/profile-edit/{{username}}">Edit Profile</h1>
+    </div>
+  </div>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button
+        class="unSelectedTab"
+        routerLink="/user-events/{{username}}"
+      >
+        <ion-label>Events</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button
+        class="unSelectedTab"
+        routerLink="/user-requests/{{username}}"
+      >
+        <ion-label>Requests</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button
+        class="unSelectedTab"
+        routerLink="/user-approvals/{{username}}"
+      >
+        <ion-label>Approvals</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button
+        class="SelectedTab"
+        selected="true"
+        routerLink="/user-profile/{{username}}"
+      >
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
